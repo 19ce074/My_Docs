@@ -26,12 +26,12 @@ openssl x509 -in ca.pem -purpose -noout -text
 ```
 
 ### Generate Certificate
-1. Create a RSA key (Private key)
+#### 1. Create a RSA key (Private key)
 ```bash
 openssl genrsa -out server.key 2048
 ```
-2. Create a Certificate Signing Request (CSR)
-+ Change the fields, DNS and IP.
+#### 2. Create a Certificate Signing Request (CSR)
+Change the fields, DNS and IP.
 ```bash
 cat > csr.conf <<EOF
 [ req ]
@@ -60,11 +60,13 @@ IP.2 = 192.168.1.6
 
 EOF
 ```
-3. Generate Certificate Signing Request (CSR) Using Server Private Key. This will generate server.csr.
+#### 3. Generate Certificate Signing Request (CSR) Using Server Private Key. 
+This will generate server.csr.
 ```bash
 openssl req -new -key server.key -out server.csr -config csr.conf
 ```
-4. Create a external file. Change the DNS name.
+#### 4. Create a external file. 
+Change the DNS name.
 ```bash
 cat > cert.conf <<EOF
 
@@ -77,5 +79,15 @@ subjectAltName = @alt_names
 DNS.1 = demo.mlopshub.com
 
 EOF
+```
+#### 5. Generate SSL certificate With self signed CA.
+Execute the following command to generate the SSL certificate that is signed by the rootCA.crt and rootCA.key created as part of our own Certificate Authority.
+```bash
+openssl x509 -req \
+    -in server.csr \
+    -CA rootCA.crt -CAkey rootCA.key \
+    -CAcreateserial -out server.crt \
+    -days 365 \
+    -sha256 -extfile cert.conf
 ```
   
