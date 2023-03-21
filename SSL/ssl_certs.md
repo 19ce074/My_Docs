@@ -119,8 +119,7 @@ Go to Settings -> Privacy and Security -> Security -> Manage Certificates -> Aut
 Clear the Browser Cache and Run the website. You should know see that the website is secure and the certificate is valid!!
 
 ### This is a Script file that will do all the above steps.
-<br />
-Create a certificat.dh file and paste the below code in that.
+Create a certificate.sh file and paste the below code in that.
 ```bash
 #!/bin/bash
 # Generate a key and public CA certificate
@@ -204,4 +203,11 @@ openssl x509 -req \
 
 #move the key and certificate file to /etc/ssl
 sudo cp *.crt *.key *.conf *.csr /etc/ssl;
+
 ```
+Give the file execute permission: 
+```
+sudo chmod +x certificate.sh
+```
+
+
