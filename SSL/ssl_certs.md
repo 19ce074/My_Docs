@@ -115,5 +115,5 @@ index  index.html;
 ```
 #### 8. Go to Google Crome and import the certificate.
 Go to Settings -> Privacy and Security -> Security -> Manage Certificates -> Authorities -> Import.
-
-
+<br /> 
+Clear the Browser Cache and Run the website. You should know see that the website is secure and the certificate is valid!!
