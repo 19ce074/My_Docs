@@ -90,4 +90,30 @@ openssl x509 -req \
     -days 365 \
     -sha256 -extfile cert.conf
 ```
-  
+The above command will generate server.crt that will be used with our server.key to enable SSL in applications.
+
+#### 7. Change your website.conf file. 
+```bash
+server {
+
+listen   443;
+
+ssl    on;
+ssl_certificate    /etc/ssl/server.crt;
+ssl_certificate_key    /etc/ssl/server.key;
+
+server_name your.domain.com;
+access_log /var/log/nginx/nginx.vhost.access.log;
+error_log /var/log/nginx/nginx.vhost.error.log;
+location / {
+root   /home/www/public_html/your.domain.com/public/;
+index  index.html;
+}
+
+}
+
+```
+#### 8. Go to Google Crome and import the certificate.
+Go to Settings -> Privacy and Security -> Security -> Manage Certificates -> Authorities -> Import.
+
+
