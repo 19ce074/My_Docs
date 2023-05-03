@@ -16,3 +16,17 @@ The core Terraform workflow has three steps:
 
 ### Creating a sample resource
 
+```
+resource "local_file" "pet" {
+  filename = "/home/vivek/Projects/pets.txt"
+  content = "We love pets!"
+}
+```
+"local" is provider </br>
+"file" is file type </br>
+"pet" is resource name </br>
+
+With the configuration file ready, we can create file resource using the terraform command. 
+1) Run the `terraform init` command. To check the config file and initialize the working dir where the .tf file is located.
+2) Run the `terraform plan` command. it will show the actions that will be carried out.
+3) Run the `terraform 
