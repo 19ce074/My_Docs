@@ -1,0 +1,79 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title>  
+Example of Submit Disabled  
+</title>  
+<style>  
+/* The following tag selector body use the font-family and background-color properties for body of a page*/  
+  
+body {  
+font-family: Calibri, Helvetica, sans-serif;  
+background-color: pink;  
+}  
+/* Following container class used padding for generate space around it, and also use a background-color for specify the color lightblue as a background */    
+.container {  
+padding: 50px;  
+background-color: lightblue;  
+}  
+/* The following tag selector input uses the different properties for the text filed. */  
+  
+input[type=text] {  
+  width: 100%;  
+  padding: 15px;  
+margin: 5px 0 22px 0;  
+display: inline-block;  
+ border: none;  
+ background: #f1f1f1;  
+}  
+input[type=text]:focus {  
+background-color: orange;  
+outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+        }  
+/* The following tag selector button uses the different properties for the Button. */  
+  
+button {  
+  color: red;  
+  padding: 16px 20px;    
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  
+  opacity: 0.9;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+<div class="container">  
+<center>    
+<h1> Registration Form </h1>   
+</center>  
+<label> Firstname: </label>   
+<input type="text" name="firstname" placeholder= "Enter your Firstname" size="15" required />   
+<label> Middlename: </label>   
+<input type="text" name="middlename" placeholder="Enter your Middlename" size="15" />   
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Enter your Lastname" size="15"required />   
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+</div>  
+<label for="email"> Email: <label>  
+<input type="text" placeholder="Enter Your Email ID" name="email" required>  
+  
+In this example, the disabled attribute is used to disable the Submit button. If you click on the "Submit Form" button, without filling the values, then it will not show the constraints included.   
+  
+<button type="submit" value="submit" disabled> Submit Form </button>  
+</form>  
+</body>  
+</html>  
