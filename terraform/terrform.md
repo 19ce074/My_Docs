@@ -22,11 +22,11 @@ resource "local_file" "pet" {
   content = "We love pets!"
 }
 ```
-"local" is provider </br>
-"file" is file type </br>
-"pet" is resource name </br>
++ "local" is provider </br>
++ "file" is file type </br>
++ "pet" is resource name </br>
 
 With the configuration file ready, we can create file resource using the terraform command. 
 1) Run the `terraform init` command. To check the config file and initialize the working dir where the .tf file is located.
-2) Run the `terraform plan` command. it will show the actions that will be carried out.
-3) Run the `terraform 
+2) Run the `terraform plan` command. It will show the actions that will be carried out.
+3) Run the `terraform apply` command to execute and create the resource.
