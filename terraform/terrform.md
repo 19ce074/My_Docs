@@ -14,6 +14,9 @@ The core Terraform workflow has three steps:
 
 <img src="https://developer.hashicorp.com/_next/image?url=https%3A%2F%2Fcontent.hashicorp.com%2Fapi%2Fassets%3Fproduct%3Dterraform%26version%3Dv1.4.6%26asset%3Dwebsite%252Fimg%252Fdocs%252Fintro-terraform-workflow.png%26width%3D2038%26height%3D1773&w=2048&q=75" width="520">
 
+### Installation
+Go to the official installtion documentation (https://developer.hashicorp.com/terraform/downloads)
+
 ### Creating a sample resource
 
 ```
@@ -31,3 +34,4 @@ With the configuration file ready, we can create file resource using the terrafo
 2) Run the `terraform plan` command. It will show the actions that will be carried out.
 3) Run the `terraform apply` command to execute and create the resource.
 4) Run the `terraform show` command to see the details of the resource that we created.
+5) Run the `terraform destroy` command to destroy the resource.
