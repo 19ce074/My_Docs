@@ -30,3 +30,4 @@ With the configuration file ready, we can create file resource using the terrafo
 1) Run the `terraform init` command. To check the config file and initialize the working dir where the .tf file is located.
 2) Run the `terraform plan` command. It will show the actions that will be carried out.
 3) Run the `terraform apply` command to execute and create the resource.
+4) Run the `terraform show` command to see the details of the resource that we created.
