@@ -35,3 +35,27 @@ With the configuration file ready, we can create file resource using the terrafo
 3) Run the `terraform apply` command to execute and create the resource.
 4) Run the `terraform show` command to see the details of the resource that we created.
 5) Run the `terraform destroy` command to destroy the resource.
+
+### Input Variables
+Input variables let you customize aspects of Terraform modules without altering the module's own source code. 
+In normal convection we create a variable.tf file to declare and store variables. We then access the variable from the variable.tf file from the main.tf file.
+
+#### Main.tf 
+```
+resource "local_file" "pet" {
+	filename = var.filename
+	content = var.content
+}
+```
+
+#### Variable.tf
+```
+variable "filename" {
+	type = string
+	default = "/home/vivek/Projects/pets.txt"
+}
+
+variable "content" {
+	default = "We love pets !!"
+}
+```
