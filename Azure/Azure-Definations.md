@@ -25,4 +25,7 @@ Service delivery model over the internet (cloud). This includes but is not limit
 | Maintenance | Significant | Low  |
 | Value over time | Lowers      | No change |
 
+## IaaS PaaS SaaS
+
+![image](https://github.com/19ce074/My_Docs/assets/125547030/3ef665e6-f2fe-46d8-8e25-e7ceecf18b76)
 
