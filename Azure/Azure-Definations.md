@@ -15,3 +15,14 @@ Service delivery model over the internet (cloud). This includes but is not limit
 + **disaster recovery** is the process and design principle which allows a system to recovers from natural or human induced disasters
 + **high availability** is the agreed level of operational uptime for the system. It is a simple calculation of system uptime versus whole lifetime of the system.
 + **availability** = uptime/(uptime + downtime)
+
+
+| Paramteres | **CapEx**   | **OpEx** |
+| ------------- | ------------| -------- | 
+| Up front cost | Significant | None     |
+| Ongoing cost | Low         | Based on usage|
+| Tax Deduction| Over time   | Same year     |
+| Maintenance | Significant | Low  |
+| Value over time | Lowers      | No change |
+
+
