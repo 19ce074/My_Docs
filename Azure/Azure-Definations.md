@@ -29,3 +29,6 @@ Service delivery model over the internet (cloud). This includes but is not limit
 
 ![image](https://github.com/19ce074/My_Docs/assets/125547030/3ef665e6-f2fe-46d8-8e25-e7ceecf18b76)
 
+## Azure VMs
+
+![image](https://github.com/19ce074/My_Docs/assets/125547030/3e2f59d2-49c8-4b31-b339-127c4651e70d)
