@@ -3,6 +3,8 @@
 + **Azure app service** to host backend.
 + **Azure blob** for static-website to host frontend.
 + **Azure database** for Mysql server to host database.
+
+ ---
  
 ## 1) Create a Resource group:
 
@@ -31,13 +33,11 @@ Sure! Here are the steps to create a resource group in Microsoft Azure in Markdo
 
 10. Once the resource group is created successfully, you will see a notification indicating that the deployment is complete. You can then click on the "Go to resource group" button to navigate to the newly created resource group.
 
+---
+
 ## 2) Create Azure App service 
 
-
-
-
-
-Sure! Here are the steps to create an Azure App Service in Markdown syntax:
+ Here are the steps to create an Azure App Service in Markdown syntax:
 
 1. **Sign in to Azure Portal**: Open a web browser and navigate to the [Azure Portal](https://portal.azure.com/). Sign in with your Azure account credentials.
 
@@ -66,6 +66,8 @@ Sure! Here are the steps to create an Azure App Service in Markdown syntax:
 
 8. **Access your App Service**: Once the deployment is complete, you can access your App Service using the assigned URL or custom domain (if configured). You can find the URL under the "Overview" section of your App Service in the Azure Portal.
 
+---
+
 ## 3) Create blob to host frontend
 
 To host a static website in Azure Blob Storage using the Static Website feature, you can follow these steps:
@@ -81,6 +83,8 @@ To host a static website in Azure Blob Storage using the Static Website feature,
 5. **Set Container Access Level**: Configure the access level of the Blob Container to allow public access. Select the "Access control (IAM)" option from the sidebar, choose "Add," and provide the appropriate permissions for anonymous access to your website files.
 
 6. **Access the Static Website**: Once the static website hosting is enabled and container access is configured, you can access your website using the provided endpoint. It will be in the format `https://<storageaccountname>.<blobendpoint>/<containername>`.
+
+---
 
 ## 4) Create a mysql databse
 
@@ -102,6 +106,7 @@ To create a MySQL database in Azure using Azure Database for MySQL, follow these
 
 8. **Access the MySQL database**: Once the deployment is complete, you can access your MySQL database using various tools such as MySQL Workbench, phpMyAdmin, or the MySQL command-line client. Use the server name, administrator username, and password you configured in step 4 to establish a connection.
 
+---
 
 ## 5) Connect backend to the database:
 1. Go to the azure mysql database service that you created.
@@ -111,8 +116,12 @@ To create a MySQL database in Azure using Azure Database for MySQL, follow these
 
 **Important**  If you get this error: Connections using insecure transport are prohibited while --require_secure_transport=ON" in MySQL then reder to [this document](https://learn.microsoft.com/en-gb/azure/mysql/flexible-server/how-to-connect-tls-ssl#disable-ssl-enforcement-on-your-flexible-server)
 
+---
+
 ## 6) Connect frontend to backend
 In your code of frontend insted of the localhost url paste domain name of the backend that is hosted in app service.
+
+---
 
 ## 7) Final steps
 Open the url leading to the frontend. The website should be working now. 
