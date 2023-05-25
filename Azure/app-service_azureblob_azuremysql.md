@@ -82,5 +82,37 @@ To host a static website in Azure Blob Storage using the Static Website feature,
 
 6. **Access the Static Website**: Once the static website hosting is enabled and container access is configured, you can access your website using the provided endpoint. It will be in the format `https://<storageaccountname>.<blobendpoint>/<containername>`.
 
+## 4) Create a mysql databse
+
+To create a MySQL database in Azure using Azure Database for MySQL, follow these steps:
+
+1. **Sign in to the Azure portal**: Open your web browser and navigate to the Azure portal (portal.azure.com). Sign in with your Azure account credentials.
+
+2. **Create a new Azure Database for MySQL server**: In the Azure portal, select "Create a resource" and search for "Azure Database for MySQL." Click on "Azure Database for MySQL" from the results and then select "Create."
+
+3. **Configure the basic settings**: Provide the necessary details for your MySQL server, such as the subscription, resource group, server name, and region. Choose the appropriate pricing tier and compute generation based on your requirements.
+
+4. **Configure the server admin credentials**: Set the administrator username and password for your MySQL server. Make sure to choose a strong password that meets Azure's requirements.
+
+5. **Configure networking**: Define the connectivity options for your MySQL server. You can choose to allow access from specific IP addresses or enable public access. Configure the firewall settings to restrict access to only trusted sources.
+
+6. **Configure additional settings**: Provide a name for your database, select the collation (character set) for your database, and choose the version of MySQL you want to use. You can also enable backup retention and configure advanced settings if necessary.
+
+7. **Review and create**: Review all the settings you've provided, and once you're ready, click on "Create" to deploy your Azure Database for MySQL server and database.
+
+8. **Access the MySQL database**: Once the deployment is complete, you can access your MySQL database using various tools such as MySQL Workbench, phpMyAdmin, or the MySQL command-line client. Use the server name, administrator username, and password you configured in step 4 to establish a connection.
 
 
+## 5) Connect backend to the database:
+1. Go to the azure mysql database service that you created.
+2. Fine the blade "connect" under the settings.
+3. Copy the connection details and paste it in your backend env file.
+4. Test the connection of backend by accessing the url to the backend.
+
+**Important**  If you get this error: Connections using insecure transport are prohibited while --require_secure_transport=ON" in MySQL then reder to [this document](https://learn.microsoft.com/en-gb/azure/mysql/flexible-server/how-to-connect-tls-ssl#disable-ssl-enforcement-on-your-flexible-server)
+
+## 6) Connect frontend to backend
+In your code of frontend insted of the localhost url paste domain name of the backend that is hosted in app service.
+
+## 7) Final steps
+Open the url leading to the frontend. The website should be working now. 
