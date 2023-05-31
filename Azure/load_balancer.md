@@ -21,3 +21,16 @@
 | 2) | ![image](https://github.com/19ce074/My_Docs/assets/125547030/3c59b250-889a-4cac-937c-6539f75d4980) |
 | 3) | In advace tab add the script to install webserver into vm <br /> ![image](https://github.com/19ce074/My_Docs/assets/125547030/50d3ac8d-4486-476d-8d2d-dc65324d92ad) |
 | 4) | ![image](https://github.com/19ce074/My_Docs/assets/125547030/661c4302-ad25-4e31-9c54-fc3d87ca24f4) |
+
+<br />
+
+Create another vm in the same subnet and install nginx in that.
+<br />
+![image](https://github.com/19ce074/My_Docs/assets/125547030/f518c1dd-4f47-411b-ae2c-220afc3055e6)
+
+<br />
+
+### 3) Create azure load balancer
+
+| Step     | Screenshot      | 
+| ------------- | ------------- |
