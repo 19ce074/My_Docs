@@ -34,3 +34,8 @@ Create another vm in the same subnet and install nginx in that.
 
 | Step     | Screenshot      | 
 | ------------- | ------------- |
+![Screenshot from 2023-05-31 17-36-40](https://github.com/19ce074/My_Docs/assets/125547030/834ef5f4-3580-4754-93dc-fd3808dae005)
+
+![image](https://github.com/19ce074/My_Docs/assets/125547030/3353b5c3-3039-411d-aa7f-e79358c92149)
+
+![image](https://github.com/19ce074/My_Docs/assets/125547030/5faac397-a03b-4d7c-b0b1-b5e5b936a7ae)
