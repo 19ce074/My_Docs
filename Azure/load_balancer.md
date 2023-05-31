@@ -20,4 +20,4 @@
 | 1) | ![image](https://github.com/19ce074/My_Docs/assets/125547030/d9fad230-a370-4665-97ba-e6fe0836177a) ![image](https://github.com/19ce074/My_Docs/assets/125547030/a93527f9-d432-4317-b933-f2190c5b71f3)|
 | 2) | ![image](https://github.com/19ce074/My_Docs/assets/125547030/3c59b250-889a-4cac-937c-6539f75d4980) |
 | 3) | In advace tab add the script to install webserver into vm <br /> ![image](https://github.com/19ce074/My_Docs/assets/125547030/50d3ac8d-4486-476d-8d2d-dc65324d92ad) |
-
+| 4) | ![image](https://github.com/19ce074/My_Docs/assets/125547030/661c4302-ad25-4e31-9c54-fc3d87ca24f4) |
